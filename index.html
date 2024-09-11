@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AirDrop</title>
+  <style>
+    @font-face {
+      font-family: 'EASVHS';
+      src: url('/easvhs.ttf') format('truetype');
+    }
+
+    html,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      padding: 200px;
+
+      @media (max-width: 768px) {
+        padding: 200px 100px;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      color: #ffab00;
+      font-family: 'EASVHS', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      word-wrap: normal;
+      background-color: #111;
+      text-align: center;
+    }
+
+    .vhs {
+      text-shadow: 0.06rem 0 0.06rem #f20000, -0.125rem 0 0.06rem #f20000;
+      animation-duration: 0.01s;
+      animation-name: textflicker;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      font-size: 20px;
+    }
+
+    .vhs span {
+      letter-spacing: 2px;
+    }
+
+    @keyframes textflicker {
+      from {
+        text-shadow: 1px 0 0 #ea36af, -2px 0 0 #75fa69;
+      }
+
+      to {
+        text-shadow: 2px 0.5px 2px #ea36af, -1px -0.5px 2px #75fa69;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="vhs">
+      We AirDrop the Peace
+    </div>
+  </div>
+</body>
+</html>
